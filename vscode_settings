@@ -1,0 +1,11 @@
+{
+    "window.zoomLevel": 2,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "workbench.startupEditor": "none",
+    "editor.fontFamily": "DejaVu Sans Mono, monospace",
+    "terminal.integrated.fontFamily": "'DejaVu Sans Mono', 'PowerlineSymbols'",
+}
