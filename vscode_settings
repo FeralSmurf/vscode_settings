@@ -8,4 +8,48 @@
     "workbench.startupEditor": "none",
     "editor.fontFamily": "DejaVu Sans Mono, monospace",
     "terminal.integrated.fontFamily": "'DejaVu Sans Mono', 'PowerlineSymbols'",
+    "redhat.telemetry.enabled": true,
+    "workbench.iconTheme": "catppuccin-mocha",
+    "codeium.enableConfig": {
+        "*": true,
+        "java": false
+    },
+
+
+// Vim-like commands
+
+"vim.leader": "<Space>",
+"vim.hlsearch": true,
+"vim.normalModeKeyBindingsNonRecursive": [
+  // NAVIGATION
+  // switch b/w buffers
+  { "before": ["<S-h>"], "commands": [":bprevious"] },
+  { "before": ["<S-l>"], "commands": [":bnext"] },
+
+  // splits
+  { "before": ["leader", "v"], "commands": [":vsplit"] },
+  { "before": ["leader", "s"], "commands": [":split"] },
+
+  // panes
+  {
+    "before": ["leader", "h"],
+    "commands": ["workbench.action.focusLeftGroup"]
+  },
+  {
+    "before": ["leader", "j"],
+    "commands": ["workbench.action.focusBelowGroup"]
+  },
+  {
+    "before": ["leader", "k"],
+    "commands": ["workbench.action.focusAboveGroup"]
+  },
+  {
+    "before": ["leader", "l"],
+    "commands": ["workbench.action.focusRightGroup"]
+  },
+  // NICE TO HAVE
+  { "before": ["leader", "?"], "commands": ["workbench.action.quickOpen"] },
+  { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+],
+
 }
